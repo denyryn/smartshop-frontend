@@ -12,11 +12,11 @@ import { Text, Button } from 'react-native';
 export default function ProfileScreen() {
     const [text, setText] = useState("");
     return (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <ThemedView style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
             <ThemedText type='h1' style={styles.title}>
                 This is Profile Page
             </ThemedText>
-        </View>
+        </ThemedView>
     );
 }
 

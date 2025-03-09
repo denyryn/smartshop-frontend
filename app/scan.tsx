@@ -3,6 +3,7 @@ import React from 'react';
 import { Stack } from 'expo-router';
 
 import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
 
 
 export default function ScanScreen() {
@@ -17,11 +18,11 @@ export default function ScanScreen() {
                     headerTitle: 'Scan Item',
                 }}
             />
-            <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+            <ThemedView style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <ThemedText type='h1' style={styles.title}>
                     This is Scan Page
                 </ThemedText>
-            </View>
+            </ThemedView>
         </>
     );
 }
