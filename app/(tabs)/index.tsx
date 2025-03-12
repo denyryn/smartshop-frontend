@@ -26,6 +26,14 @@ export default function HomeScreen() {
         />
         <Iconsax.SearchNormal size={20} className="text-gray-500" />
       </View>
+      <View>
+        <Image
+          source={require("../../assets/images/profile.png")}
+          className="w-8 h-8 rounded-full"
+        />
+        <ThemedText className="text-lg">Product Title</ThemedText>
+        <ThemedText>Product Description</ThemedText>
+      </View>
     </ThemedView>
   );
 }
