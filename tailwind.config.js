@@ -11,9 +11,6 @@ module.exports = {
       colors: {
         ...ColorVariables,
       },
-      typography: {
-        ...TypographyVariables
-      }
     },
   },
   plugins: [require("daisyui")],
