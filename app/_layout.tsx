@@ -6,6 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { verifyInstallation } from 'nativewind';
+import * as Font from "expo-font";
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
@@ -33,7 +34,7 @@ export default function RootLayout() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      router.replace('/(auth)/login');
+      router.replace('/(onboard)/onboard');
     }
   }, [isAuthenticated, router]);
 
@@ -47,6 +48,7 @@ export default function RootLayout() {
         screenOptions={{ gestureEnabled: true, gestureDirection: 'horizontal' }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="(onboard)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
         <Stack.Screen name="scan" />
       </Stack>
