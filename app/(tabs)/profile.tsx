@@ -9,19 +9,19 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Text, Button } from 'react-native';
 
-export default function HomeScreen() {
-
-  return (
-    <ThemedView style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <ThemedText type='h1' style={styles.title}>
-        This is Home Page
-      </ThemedText>
-    </ThemedView>
-  );
+export default function ProfileScreen() {
+    const [text, setText] = useState("");
+    return (
+        <ThemedView style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+            <ThemedText type='h1' style={styles.title}>
+                This is Profile Page
+            </ThemedText>
+        </ThemedView>
+    );
 }
 
 const styles = StyleSheet.create({
-  title: {
-    alignSelf: 'center',
-  },
+    title: {
+        alignSelf: 'center',
+    },
 });
