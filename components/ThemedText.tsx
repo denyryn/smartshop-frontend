@@ -12,13 +12,13 @@ export function ThemedText({
   style,
   lightColor,
   darkColor,
-  type = 'bodyMd',
+  type = 'body',
   ...rest
 }: ThemedTextProps) {
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
-  const textStyle = Typography[type] || Typography.bodyMd;
+  const textStyle = Typography[type] || Typography.body;
 
   return (
-    <Text style={[{ color }, textStyle, style]} {...rest} />
+    <Text {...rest} style={[{ color }, textStyle, style, { textTransform: "none" }]} />
   );
 }

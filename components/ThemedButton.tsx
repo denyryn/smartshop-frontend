@@ -20,9 +20,9 @@ export function ThemedButton({ type, onPress, className, lightColor, darkColor, 
     );
 }
 
-const additional = "h-[48px] w-full";
+const additional = "h-[48px] flex-1 rounded-xl";
 
 const styles = {
-    primary: `btn btn-primary ${additional}`,
-    secondary: `btn btn-outline btn-secondary ${additional}`
+    primary: `btn btn-neutral ${additional}`,
+    secondary: `btn btn-outline btn-neutral ${additional}`
 };
