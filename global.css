@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    /* Displays */
+    --text-display1: leading-[110%] tracking-[-1px] text-[56px] font-normal;
+    --text-display2: leading-[135%] tracking-[0px] text-[28px] font-medium;
+    --text-display3: leading-[120%] tracking-[0px] text-[28px] font-normal;
+
+    /* Headings */
+    --text-h1: leading-[110%] tracking-[-1px] text-[40px] font-semibold;
+    --text-h2: leading-[100%] tracking-[-1px] text-[32px] font-medium;
+    --text-h3: leading-[100%] tracking-[-0.5px] text-[30px] font-medium;
+    --text-h4: leading-[135%] tracking-[-1px] text-[28px] font-medium;
+    --text-h5: leading-[145%] tracking-[-1px] text-[22px] font-medium;
+
+    /* Bodies */
+    --text-body-xxl: leading-[130%] tracking-[0px] text-[20px];
+    --text-body-xl: leading-[145%] tracking-[-1px] text-[18px];
+    --text-body-lg: leading-[140%] tracking-[0px] text-[16px];
+    --text-body: leading-[145%] tracking-[0px] text-[14px];
+    --text-body-sm: leading-[150%] tracking-[0px] text-[12px];
+    --text-body-xs: leading-[160%] tracking-[0px] text-[10px];
+}
+
+/* Utility classes using Tailwind's @apply */
+.text-display1 {
+    @apply leading-[110%] tracking-[-1px] text-[56px] font-normal;
+}
+
+.text-display2 {
+    @apply leading-[135%] tracking-[0px] text-[28px] font-medium;
+}
+
+.text-display3 {
+    @apply leading-[120%] tracking-[0px] text-[28px] font-normal;
+}
+
+.text-h1 {
+    @apply leading-[110%] tracking-[-1px] text-[40px] font-semibold;
+}
+
+.text-h2 {
+    @apply leading-[100%] tracking-[-1px] text-[32px] font-medium;
+}
+
+.text-h3 {
+    @apply leading-[100%] tracking-[-0.5px] text-[30px] font-medium;
+}
+
+.text-h4 {
+    @apply leading-[135%] tracking-[-1px] text-[28px] font-medium;
+}
+
+.text-h5 {
+    @apply leading-[145%] tracking-[-1px] text-[22px] font-medium;
+}
+
+.text-body-xxl {
+    @apply leading-[130%] tracking-[0px] text-[20px];
+}
+
+.text-body-xl {
+    @apply leading-[145%] tracking-[-1px] text-[18px];
+}
+
+.text-body-lg {
+    @apply leading-[140%] tracking-[0px] text-[16px];
+}
+
+.text-body {
+    @apply leading-[145%] tracking-[0px] text-[14px];
+}
+
+.text-body-sm {
+    @apply leading-[150%] tracking-[0px] text-[12px];
+}
+
+.text-body-xs {
+    @apply leading-[160%] tracking-[0px] text-[10px];
+}

@@ -1,19 +1,24 @@
 import { StyleSheet } from "react-native";
 
 export const Typography = StyleSheet.create({
-    h1: { fontSize: 40, fontWeight: '600', lineHeight: 48, letterSpacing: -1 },
-    h2: { fontSize: 32, fontWeight: '500', lineHeight: 40, letterSpacing: -1 },
-    h3: { fontSize: 30, fontWeight: '500', lineHeight: 38, letterSpacing: -0.5 },
-    h4: { fontSize: 28, fontWeight: '500', lineHeight: 38, letterSpacing: -1 },
-    h5: { fontSize: 22, fontWeight: '500', lineHeight: 32, letterSpacing: -1 },
-    display1: { fontSize: 56, fontWeight: '400', lineHeight: 66, letterSpacing: -1 },
-    display2: { fontSize: 28, fontWeight: '500', lineHeight: 38 },
-    display3: { fontSize: 28, fontWeight: '400', lineHeight: 36 },
-    body: { fontSize: 16, fontWeight: '400', lineHeight: 24 },
-    bodyXl: { fontSize: 20, fontWeight: '700', lineHeight: 28 },
-    bodyLg: { fontSize: 18, fontWeight: '500', lineHeight: 28, letterSpacing: -1 },
-    bodyMd: { fontSize: 16, fontWeight: '500', lineHeight: 24 },
-    bodySm: { fontSize: 14, fontWeight: '500', lineHeight: 22 },
-    bodyXs: { fontSize: 12, fontWeight: '500', lineHeight: 18 },
-    bodyXxs: { fontSize: 10, fontWeight: '500', lineHeight: 16 },
+    // Displays
+    display1: { fontSize: 56, lineHeight: 61.6, letterSpacing: -1, fontWeight: "400" },
+    display2: { fontSize: 28, lineHeight: 37.8, letterSpacing: 0, fontWeight: "500" },
+    display3: { fontSize: 28, lineHeight: 33.6, letterSpacing: 0, fontWeight: "400" },
+
+    // Headings
+    h1: { fontSize: 40, lineHeight: 44, letterSpacing: -1, fontWeight: "600" },
+    h2: { fontSize: 32, lineHeight: 32, letterSpacing: -1, fontWeight: "500" },
+    h3: { fontSize: 30, lineHeight: 30, letterSpacing: -0.5, fontWeight: "500" },
+    h4: { fontSize: 28, lineHeight: 37.8, letterSpacing: -1, fontWeight: "500" },
+    h5: { fontSize: 22, lineHeight: 31.9, letterSpacing: -1, fontWeight: "500" },
+
+    // Bodies
+    bodyXxl: { fontSize: 20, lineHeight: 26, letterSpacing: 0 },
+    bodyXl: { fontSize: 18, lineHeight: 26.1, letterSpacing: -1 },
+    bodyLg: { fontSize: 16, lineHeight: 22.4, letterSpacing: 0 },
+    body: { fontSize: 14, lineHeight: 20.3, letterSpacing: 0 },
+    bodySm: { fontSize: 12, lineHeight: 18, letterSpacing: 0 },
+    bodyXs: { fontSize: 10, lineHeight: 16, letterSpacing: 0 },
 });
+
