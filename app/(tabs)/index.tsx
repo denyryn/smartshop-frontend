@@ -10,7 +10,7 @@ export default function HomeScreen() {
   const productCards = [1, 2, 3]; // loop three times
 
   return (
-    <ThemedView className="flex-1 pt-6">
+    <ThemedView className="flex-1 pt-6 pb-20">
       <ScrollView contentContainerStyle={{ padding: 16 }}>
         <View className="flex-row items-center justify-between mt-8 w-full">
           <View className="flex-row items-center space-x-2">
