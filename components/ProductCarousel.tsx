@@ -37,6 +37,10 @@ export default function ProductCarousel() {
         data={slides}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <ProductList item={item} />}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        pagingEnabled
+        bounces={false}
       />
     </View>
   );
