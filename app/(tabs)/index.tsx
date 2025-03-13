@@ -3,6 +3,7 @@ import { Image, StyleSheet, TextInput, View, ScrollView } from "react-native";
 // components
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import ProductCarousel from "@/components/ProductCarousel";
 
 import * as Iconsax from "iconsax-react-native";
 
@@ -31,7 +32,9 @@ export default function HomeScreen() {
           <Iconsax.SearchNormal size={20} className="text-gray-500" />
         </View>
 
-        <View className="border border-gray-100 mt-6 rounded-2xl w-3/4 overflow-hidden">
+        <ProductCarousel />
+
+        {/* <View className="border border-gray-100 mt-6 rounded-2xl w-3/4 overflow-hidden">
           <View style={{ width: "100%", aspectRatio: 16 / 9 }}>
             <Image
               source={require("../../assets/images/product.png")}
@@ -64,7 +67,7 @@ export default function HomeScreen() {
               </View>
             </View>
           </View>
-        </View>
+        </View> */}
 
         {productCards.map((_, index) => (
           <View
