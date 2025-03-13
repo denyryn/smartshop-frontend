@@ -7,7 +7,7 @@ import { ThemedView } from "@/components/ThemedView";
 import * as Iconsax from "iconsax-react-native";
 
 export default function HomeScreen() {
-  const productCards = [1, 2, 3]; // loop three times
+  const productCards = [1, 2, 3];
 
   return (
     <ThemedView className="flex-1 pt-6 pb-20">
